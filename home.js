@@ -12,3 +12,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+textArea.addEventListener("focus", function() {
+    textArea.style.backgroundColor = "#fffae6";
+});
+
+textArea.addEventListener("blur", function() {
+    textArea.style.backgroundColor = "#fff";
+});
+
+contentImage.addEventListener("mouseover", function() {
+    contentImage.style.transform = "rotate(5deg) scale(1.05)";
+    contentImage.style.transition = "transform 0.3s ease-in-out";
+});
+
+contentImage.addEventListener("mouseout", function() {
+    contentImage.style.transform = "rotate(0deg) scale(1)";
+});
+
